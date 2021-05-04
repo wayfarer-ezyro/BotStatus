@@ -13,12 +13,12 @@ from telethon import TelegramClient
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s', level=logging.INFO)
 
 try:
-    appid = config("APP_ID")
-    apihash = config("API_HASH")
-    session = config("SESSION", default=None)
-    chnl_id = config("CHANNEL_ID", cast=int)
-    msg_id = config("MESSAGE_ID", cast=int)
-    botlist = config("BOTS")
+    appid = config("3609223")
+    apihash = config("302bf5498005e091fd23c88d8e76740e")
+    session = config("1BVtsOKMBu4CELgingQXglIp8G7Bz2jbVJjEuL2Q94SWlVDzMqMLlVMhMVR57x6Wnbbujqq6iXHzcz940FmoGlUd4AYa0ar5TzoW4k50imPz2x7UDjg3GS0JWQa6vP_IsrlutYIN7sO9bqj7-DDFmocL6rHe3jI-tH5w0VKUxtqYIqp0YPdA7JjilSopFbuDEuFsUbuPV64RP6APG8pDFVhnbMEgeTLIGYuuTUf6XP9-w1oKWDqd9xUqoXMO63VDx06RHLJSXL6tgBj_gft4h-UdwtAT07Nl9MgpNIGBXOjqGGui2LPovAvQI_rjbz7Y__Oajc7PuKvOFV63jjTaBPRzAVJe5IuM=", default=None)
+    chnl_id = config("-1001418249477", cast=int)
+    msg_id = config("67075", cast=int)
+    botlist = config("1769784837 1671321126 1701860498 1700456017")
     bots = botlist.split()
     session_name = str(session)
     user_bot = TelegramClient(StringSession(session_name), appid, apihash)
@@ -32,7 +32,7 @@ async def BotzHub():
             print("[INFO] starting to check uptime..")
             await user_bot.edit_message(int(chnl_id), msg_id, "**@BotzHub Bots Stats.**\n\n`Performing a periodic check...`")
             c = 0
-            edit_text = "**@BotzHub Bots Stats.**\n\n"
+            edit_text = "**𖤍 Λℓσηє 𖤍’s Bots’ Stats.**\n\n"
             for bot in bots:
                 print(f"[INFO] checking @{bot}")
                 snt = await user_bot.send_message(bot, "/start")
